@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg{
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(8,4,39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.circle1{
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+    background-color: rgb(236,189,161);
+    z-index: 2;
+}
+.circle2{
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+    background-color: rgb(236,189,161);
+    z-index: 2;
+}
+
+.strip{
+    background-color:rgb(218,137,133);
+    width: 612px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10px;
+    border-radius: 100px;
+}
+.circle3,.circle4{
+    width: 200px;
+    height: 200px;
+    background-color:rgb(0, 0, 46);
+    border-radius: 1000px;
+}
+.circle5{
+    width: 404px;
+    height: 404px;
+    background-color: rgb(8, 4, 39);
+    position: absolute;
+    border-radius: 1000px;
+    z-index: 1;
+    top: 51px;
+}
+.circle6{
+    width: 404px;
+    height: 404px;
+    background-color:rgb(8,4,39) ;
+    position: absolute;
+    border-radius: 1000px;
+    z-index: 1;
+    bottom:-172px;
+}
+.circle7{
+
+    width: 404px;
+    height: 404px;
+    background-color:rgb(8,4,39) ;
+    position: absolute;
+    border-radius: 1000px;
+    z-index: 1;
+    bottom:-172px;
+
+}
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="circle1"></div>
+        <div class="strip">
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="circle2"></div>
+        <div class="circle5"></div>
+        <div class="circle6">
+            <div class="circle7"></div>
+        </div>
+    </div>
+</body>
+</html>
